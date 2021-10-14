@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Target leaks form</title>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+<div class="container">
+<div class="py-5 text-center">
+        <img class="" src="https://noyb.eu/themes/ao_canvas/logo.png" alt="noyb_logo">
+        <h2>Targetleaks Registrierung</h2>
+        <p class="lead"> Bitte registriere dich hier:</p>
+      </div>
+<fieldset>
+
+  <form name="frmContact" class="needs-validation " method="post" action="form.php">
+    <p>
+      <label for="Email">Deine email: </label>
+      <input type="text" class="form-control" name="txtEmail" id="txtEmail" placeholder="Bitte gib eine gültige email an" value="" required>
+	  <div class="invalid-feedback">
+                  Gültige email erforderlich.
+                </div>
+    </p>
+    <p>
+      <label for="token">Dein Targetleaks Token:</label>
+      <input type="text"  class="form-control"  name="txtToken" id="txtToken" placeholder="Gib deinen Targetleaks Token hier ein" value="" required>
+    </p>
+    <p>
+      <label for="disclaimer">Ich habe den legal disclaimer gelesen und verstanden und willige ein:</label>
+      <br>
+      <input type="checkbox" id="Disclaimer" name="Dislaimer"
+         checked>
+    </p>
+
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit"  class="btn btn-primary btn-lg btn-block">
+    </p>
+  </form>
+</fieldset>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
